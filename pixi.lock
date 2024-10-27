@@ -588,6 +588,21 @@ packages:
   size: 159003
   timestamp: 1725018903918
 - kind: pypi
+  name: cargo-rocker
+  version: 0.0.1
+  path: .
+  sha256: 09f8f9fe4b0c67c46ca591536065f5fa38fa5b781ac5aca1f238a8e9903c90d6
+  requires_dist:
+  - rocker>=0.2.17
+  - black>=23,<=24.8.0 ; extra == 'test'
+  - pylint>=3.2.5,<=3.3.1 ; extra == 'test'
+  - pytest-cov>=4.1,<=5.0.0 ; extra == 'test'
+  - pytest>=7.4,<=8.3.3 ; extra == 'test'
+  - hypothesis>=6.104.2,<=6.112.2 ; extra == 'test'
+  - ruff>=0.5.0,<=0.6.8 ; extra == 'test'
+  - coverage>=7.5.4,<=7.6.1 ; extra == 'test'
+  editable: true
+- kind: pypi
   name: certifi
   version: 2024.8.30
   url: https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl
@@ -1367,21 +1382,6 @@ packages:
   version: 2.4.0
   url: https://files.pythonhosted.org/packages/32/46/9cb0e58b2deb7f82b84065f37f3bffeb12413f947f9388e4cac22c4621ce/sortedcontainers-2.4.0-py2.py3-none-any.whl
   sha256: a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0
-- kind: pypi
-  name: template-rocker
-  version: 0.0.1
-  path: .
-  sha256: 3e31113357d9cff91db98c38513ec7d38f78dd22badf8da0524e98b7c899400b
-  requires_dist:
-  - rocker>=0.2.17
-  - black>=23,<=24.8.0 ; extra == 'test'
-  - pylint>=3.2.5,<=3.3.1 ; extra == 'test'
-  - pytest-cov>=4.1,<=5.0.0 ; extra == 'test'
-  - pytest>=7.4,<=8.3.3 ; extra == 'test'
-  - hypothesis>=6.104.2,<=6.112.2 ; extra == 'test'
-  - ruff>=0.5.0,<=0.6.8 ; extra == 'test'
-  - coverage>=7.5.4,<=7.6.1 ; extra == 'test'
-  editable: true
 - kind: conda
   name: tk
   version: 8.6.13
