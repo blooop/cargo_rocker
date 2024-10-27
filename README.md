@@ -1,13 +1,13 @@
-# template_rocker
+# cargo_rocker
 
 ## Continuous Integration Status
 
-[![Ci](https://github.com/blooop/template_rocker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/blooop/template_rocker/actions/workflows/ci.yml?query=branch%3Amain)
-[![Codecov](https://codecov.io/gh/blooop/template_rocker/branch/main/graph/badge.svg?token=Y212GW1PG6)](https://codecov.io/gh/blooop/template_rocker)
-[![GitHub issues](https://img.shields.io/github/issues/blooop/template_rocker.svg)](https://GitHub.com/blooop/template_rocker/issues/)
-[![GitHub pull-requests merged](https://badgen.net/github/merged-prs/blooop/template_rocker)](https://github.com/blooop/template_rocker/pulls?q=is%3Amerged)
-[![GitHub release](https://img.shields.io/github/release/blooop/template_rocker.svg)](https://GitHub.com/blooop/template_rocker/releases/)
-[![License](https://img.shields.io/github/license/blooop/template_rocker
+[![Ci](https://github.com/blooop/cargo_rocker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/blooop/cargo_rocker/actions/workflows/ci.yml?query=branch%3Amain)
+[![Codecov](https://codecov.io/gh/blooop/cargo_rocker/branch/main/graph/badge.svg?token=Y212GW1PG6)](https://codecov.io/gh/blooop/cargo_rocker)
+[![GitHub issues](https://img.shields.io/github/issues/blooop/cargo_rocker.svg)](https://GitHub.com/blooop/cargo_rocker/issues/)
+[![GitHub pull-requests merged](https://badgen.net/github/merged-prs/blooop/cargo_rocker)](https://github.com/blooop/cargo_rocker/pulls?q=is%3Amerged)
+[![GitHub release](https://img.shields.io/github/release/blooop/cargo_rocker.svg)](https://GitHub.com/blooop/cargo_rocker/releases/)
+[![License](https://img.shields.io/github/license/blooop/cargo_rocker
 )](https://opensource.org/license/mit/)
 [![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/downloads/)
 [![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
@@ -59,12 +59,12 @@ $ pixi run arbitrary_task
 
 # Adding Functionality
 
-1. Rename template_rocker/template_rocker.py and the class inside to something more appropriate. Use scripts/rename and pass in the new project name.
+1. Rename cargo_rocker/cargo_rocker.py and the class inside to something more appropriate. Use scripts/rename and pass in the new project name.
 2. Update the extension entrypoint in `pyproject.toml` 
 
     `[project.entry-points."rocker.extensions"]`
 
-    `template_rocker = "template_rocker.template_rocker:TemplateRocker"`
+    `cargo_rocker = "cargo_rocker.cargo_rocker:TemplateRocker"`
 
     
     e.g.:

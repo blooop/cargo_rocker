@@ -2,21 +2,21 @@
 import argparse
 import pytest
 from unittest.mock import patch
-from template_rocker.template_rocker import TemplateRocker
+from cargo_rocker.cargo_rocker import TemplateRocker
 
 
 class TestTemplateRocker:
 
-    # Instantiating template_rocker Extension and verifying the name attribute is set correctly
+    # Instantiating cargo_rocker Extension and verifying the name attribute is set correctly
     def test_name_attribute_initialization(self):
         extension = TemplateRocker()
-        assert extension.name == "template_rocker"
+        assert extension.name == "cargo_rocker"
 
     def test_register_arguments(self):
         parser = argparse.ArgumentParser()
         TemplateRocker.register_arguments(parser)
         args = parser.parse_args([])
-        assert "template_rocker" in vars(args)
+        assert "cargo_rocker" in vars(args)
 
     # Handling missing template files in get_snippet method
     def test_get_snippet_missing_template(self):
