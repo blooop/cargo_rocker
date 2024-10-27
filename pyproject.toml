@@ -1,5 +1,5 @@
 [project]
-name = "template_rocker"
+name = "cargo_rocker"
 version = "0.0.1"
 authors = [{ name = "Austin Gregg-Smith", email = "blooop@gmail.com" }]
 description = "A rocker extension for installing pixi in a container"
@@ -9,8 +9,8 @@ license = "MIT"
 dependencies = ["rocker>=0.2.17"]
 
 [project.urls]
-Source = "https://github.com/blooop/template_rocker"
-Home = "https://github.com/blooop/template_rocker"
+Source = "https://github.com/blooop/cargo_rocker"
+Home = "https://github.com/blooop/cargo_rocker"
 
 [tool.pixi.project]
 channels = ["conda-forge"]
@@ -32,7 +32,7 @@ python = "3.13.*"
 
 
 [tool.pixi.pypi-dependencies]
-template_rocker = { path = ".", editable = true }
+cargo_rocker = { path = ".", editable = true }
 
 [project.optional-dependencies]
 test = [
@@ -50,10 +50,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build]
-include= ["template_rocker"]
+include= ["cargo_rocker"]
 
 [project.entry-points."rocker.extensions"]
-rocker_extension = "template_rocker.rocker_extension:TemplateRocker"
+rocker_extension = "cargo_rocker.cargo_rocker:CargoRocker"
 
 # Environments
 [tool.pixi.environments]
