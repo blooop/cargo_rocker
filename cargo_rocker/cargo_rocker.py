@@ -11,9 +11,6 @@ class CargoRocker(RockerExtension):
         self.name = CargoRocker.get_name()
 
     def get_snippet(self, cliargs):
-        return pkgutil.get_data("cargo_rocker", "templates/curl_snippet.Dockerfile").decode("utf-8")
-
-    def get_user_snippet(self, cliargs):
         return pkgutil.get_data(
             "cargo_rocker", "templates/{}_snippet.Dockerfile".format(self.name)
         ).decode("utf-8")
