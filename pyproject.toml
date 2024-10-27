@@ -53,7 +53,7 @@ build-backend = "hatchling.build"
 include= ["cargo_rocker"]
 
 [project.entry-points."rocker.extensions"]
-rocker_extension = "cargo_rocker.rocker_extension:TemplateRocker"
+rocker_extension = "cargo_rocker.rocker_extension:CargoRocker"
 
 # Environments
 [tool.pixi.environments]

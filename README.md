@@ -64,7 +64,7 @@ $ pixi run arbitrary_task
 
     `[project.entry-points."rocker.extensions"]`
 
-    `cargo_rocker = "cargo_rocker.cargo_rocker:TemplateRocker"`
+    `cargo_rocker = "cargo_rocker.cargo_rocker:CargoRocker"`
 
     
     e.g.:

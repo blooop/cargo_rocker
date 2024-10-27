@@ -2,26 +2,26 @@
 import argparse
 import pytest
 from unittest.mock import patch
-from cargo_rocker.cargo_rocker import TemplateRocker
+from cargo_rocker.cargo_rocker import CargoRocker
 
 
-class TestTemplateRocker:
+class TestCargoRocker:
 
     # Instantiating cargo_rocker Extension and verifying the name attribute is set correctly
     def test_name_attribute_initialization(self):
-        extension = TemplateRocker()
+        extension = CargoRocker()
         assert extension.name == "cargo_rocker"
 
     def test_register_arguments(self):
         parser = argparse.ArgumentParser()
-        TemplateRocker.register_arguments(parser)
+        CargoRocker.register_arguments(parser)
         args = parser.parse_args([])
         assert "cargo_rocker" in vars(args)
 
     # Handling missing template files in get_snippet method
     def test_get_snippet_missing_template(self):
 
-        extension = TemplateRocker()
+        extension = CargoRocker()
         with patch("pkgutil.get_data", return_value=None):
             with pytest.raises(AttributeError):
                 extension.get_snippet({})
@@ -29,7 +29,7 @@ class TestTemplateRocker:
     # Retrieving the default snippet using get_snippet method
     def test_retrieve_default_snippet(self):
 
-        extension = TemplateRocker()
+        extension = CargoRocker()
         snippet = extension.get_snippet(None)
 
         assert snippet is not None
@@ -37,7 +37,7 @@ class TestTemplateRocker:
     # Retrieving the user-specific snippet using get_user_snippet method
     def test_retrieve_user_specific_snippet(self):
 
-        extension = TemplateRocker()
+        extension = CargoRocker()
         snippet = extension.get_user_snippet(None)
 
         assert snippet is not None

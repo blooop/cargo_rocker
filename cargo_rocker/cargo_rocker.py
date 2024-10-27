@@ -2,18 +2,16 @@ import pkgutil
 from rocker.extensions import RockerExtension
 
 
-class TemplateRocker(RockerExtension):
+class CargoRocker(RockerExtension):
     @staticmethod
     def get_name():
         return "cargo_rocker"
 
     def __init__(self):
-        self.name = TemplateRocker.get_name()
+        self.name = CargoRocker.get_name()
 
     def get_snippet(self, cliargs):
-        return pkgutil.get_data("cargo_rocker", "templates/curl_snippet.Dockerfile").decode(
-            "utf-8"
-        )
+        return pkgutil.get_data("cargo_rocker", "templates/curl_snippet.Dockerfile").decode("utf-8")
 
     def get_user_snippet(self, cliargs):
         return pkgutil.get_data(
@@ -25,7 +23,7 @@ class TemplateRocker(RockerExtension):
         if defaults is None:
             defaults = {}
         parser.add_argument(
-            f"--{TemplateRocker.get_name()}",
+            f"--{CargoRocker.get_name()}",
             action="store_true",
             default=defaults.get("cargo_rocker"),
             help="add cargo_rocker to your docker image",
