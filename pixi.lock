@@ -591,7 +591,7 @@ packages:
   name: cargo-rocker
   version: 0.0.1
   path: .
-  sha256: 0d05eb3f63e6e310d21971bbad37850ed019a84baab26935626e9c9560325c4a
+  sha256: 09f8f9fe4b0c67c46ca591536065f5fa38fa5b781ac5aca1f238a8e9903c90d6
   requires_dist:
   - rocker>=0.2.17
   - black>=23,<=24.8.0 ; extra == 'test'
