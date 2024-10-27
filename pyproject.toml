@@ -1,6 +1,6 @@
 [project]
 name = "cargo_rocker"
-version = "0.0.1"
+version = "0.0.2"
 authors = [{ name = "Austin Gregg-Smith", email = "blooop@gmail.com" }]
 description = "A rocker extension for installing pixi in a container"
 readme = "README.md"
