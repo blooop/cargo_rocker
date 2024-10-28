@@ -1,8 +1,8 @@
 [project]
 name = "cargo_rocker"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{ name = "Austin Gregg-Smith", email = "blooop@gmail.com" }]
-description = "A rocker extension for installing pixi in a container"
+description = "A rocker extension for installing cargo in a container"
 readme = "README.md"
 license = "MIT"
 
