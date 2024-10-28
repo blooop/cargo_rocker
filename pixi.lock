@@ -584,9 +584,9 @@ packages:
   timestamp: 1725018903918
 - kind: pypi
   name: cargo-rocker
-  version: 0.0.2
+  version: 0.0.3
   path: .
-  sha256: fa1b3a3cf890596e9d1d9a45662a806777e3bf2cb33ee7c5acf1e703fdacab4b
+  sha256: c6224cb1ab3be5306c45792d519625825f7cf91b1cf5765c11ae55d972754e10
   requires_dist:
   - rocker>=0.2.17
   - black>=23,<=24.10.0 ; extra == 'test'
